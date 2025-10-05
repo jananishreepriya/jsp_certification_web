@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Certification Showcase</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #b0c4de;
+      margin: 0;
+      padding: 2.5rem 1rem 5rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #70faff;
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      text-shadow: 0 0 8px #70faff80;
+      letter-spacing: 1px;
+    }
+
+    .certificate-list {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .certificate-item {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      box-shadow: 0 0 10px #70faff22;
+      border: 1px solid #70faff33;
+      transition: box-shadow 0.35s, border-color 0.35s;
+    }
+    .certificate-item:hover {
+      border-color: #70faff;
+      box-shadow: 0 0 20px #70faff66;
+    }
+
+    h2 {
+      color: #70faff;
+      margin-bottom: 0.7rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-shadow: 0 0 4px #70faff80;
+    }
+
+    .certificate-link {
+      display: inline-block;
+      color: #90e0ef;
+      font-weight: 600;
+      font-size: 1.04rem;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    .certificate-link:hover {
+      color: #00d4ff;
+      text-shadow: 0 0 8px #00d4ff80;
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+      margin: 0.5rem 0 0;
+    }
+    li {
+      margin-bottom: 0.35rem;
+      list-style-type: "⦿ ";
+      color: #70faff;
+      font-weight: 500;
+    }
+
+    /* Footer with solid neon light blue shade */
+    footer {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: #000;
+      color: #70faff;
+      text-align: center;
+      font-size: 1rem;
+      padding: 0.9rem 0;
+      letter-spacing: 0.05em;
+      box-shadow: 0 -2px 10px #70faffaa;
+      z-index: 11;
+    }
+
+    /* Robot container and animated robot with neon glow effect */
+    .robot-container {
+      position: fixed;
+      bottom: 80px;
+      right: 24px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .robot-bubble {
+      opacity: 0;
+      pointer-events: none;
+      background: #0d0d0d;
+      color: #70faff;
+      padding: 0.7rem 1.1rem;
+      border-radius: 18px 18px 2px 18px;
+      margin-bottom: 2px;
+      font-size: 1.05rem;
+      box-shadow: 0 0 10px #70faff66;
+      border: 1px solid #70faff33;
+      position: absolute;
+      bottom: 82px;
+      right: 4px;
+      transition: opacity 0.7s;
+      font-family: inherit;
+      white-space: nowrap;
+      letter-spacing: 0.04em;
+    }
+    .robot-bubble.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .robot {
+      width: 66px;
+      height: 66px;
+      background: none;
+      animation: float 2.5s ease-in-out infinite;
+      filter: drop-shadow(0 0 8px #70faff);
+      cursor: pointer;
+      transition: transform 0.4s;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(2px); }
+      50% { transform: translateY(-7px); }
+    }
+
+    @media(max-width:600px) {
+      body { padding: 1.1rem 0.3rem 6rem; }
+      h1 { font-size: 1.55rem; }
+      .robot-container { bottom: 75px; right: 10px; }
+      .robot { width: 44px; height: 44px; }
+      .robot-bubble { font-size: 0.9rem; bottom: 54px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Certification</h1>
+  <div class="certificate-list">
+
+    <div class="certificate-item">
+      <h2>NPTEL</h2>
+      <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs18/Course/NPTEL25CS18S64340206501289518.pdf" target="_blank" class="certificate-link">Database Management – NPTEL (IIT Kharagpur)</a>
+    </div>
+    <div class="certificate-item">
+      <h2>Badges in Credly</h2>
+      <a href="https://www.credly.com/users/jananishreepriya-m" target="_blank" class="certificate-link">
+        <ul>
+          <li>People and Soft Skills Essentials</li>
+          <li>AWS Certified Cloud Practitioner</li>
+          <li>Google UX Design Professional Certificate (v2)</li>
+          <li>Linux Commands & Shell Scripting Essentials V2</li>
+          <li>CRUD Operations in MongoDB</li>
+          <li>From Relational Model (SQL) to MongoDB's Document Model</li>
+          <li>MongoDB Advanced Schema Design Patterns</li>
+          <li>MongoDB Basics for Students</li>
+          <li>IBM Cloud Essentials</li>
+          <li>Python for Data Science</li>
+          <li>IT Academy: Cloud & Virtualization</li>
+        </ul>
+      </a>
+    </div>
+    <div class="certificate-item">
+      <h2>Coursera Certifications</h2>
+      <ul>
+        <li><a href="https://www.coursera.org/account/accomplishments/specialization/UUP8U50VCR59" target="_blank" class="certificate-link">Google UX Design</a></li>
+        <li><a href="https://www.guvi.in/" target="_blank" class="certificate-link">Intro to Web Development (IBM)</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/specialization/BVKUD9MGZP3H" target="_blank" class="certificate-link">AWS Fundamentals</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/specialization/P2PFF4V8JZ9R" target="_blank" class="certificate-link">Core Java</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/9A8BARVB3ILO" target="_blank" class="certificate-link">Flutter & Dart for Mobile Apps</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/R63O3W49GP6W" target="_blank" class="certificate-link">Job Search with AI (Google)</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/36V8PURQ0UXC" target="_blank" class="certificate-link">Dashboards with Tableau</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/0TV3F2ZUS2GR" target="_blank" class="certificate-link">Visual Analytics with Tableau</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/IBDPVT4DFPBP" target="_blank" class="certificate-link">Fundamentals of Visualization (Tableau)</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/QEHWW97O0ATO" target="_blank" class="certificate-link">DevOps & Jenkins Fundamentals</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/JRBWGT8HQ76W" target="_blank" class="certificate-link">Linux Commands & Shell Scripting - IBM</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/LE4N9K0ED6O0" target="_blank" class="certificate-link">Agile Development & Scrum - IBM</a></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/UQ1JAI32NF5L" target="_blank" class="certificate-link">PHP Tutorial - W3 Schools</a></li>
+      </ul>
+    </div>
+    <div class="certificate-item">
+      <h2>Guvi Certifications</h2>
+      <ul>
+        <li><a href="https://www.guvi.in/share-certificate/Ma644361Xci5782OJY" target="_blank" class="certificate-link">ChatGPT for Everyone</a></li>
+        <li><a href="https://www.guvi.in/share-certificate/4L3931e43CJ87XI84j" target="_blank" class="certificate-link">Generative AI</a></li>
+      </ul>
+    </div>
+    <div class="certificate-item">
+      <h2>Mindluster</h2>
+      <a href="image/Janani Hadoop Certificate.pdf" target="_blank" class="certificate-link">Big Data Hadoop</a>
+    </div>
+
+    <div class="certificate-item">
+      <h2>Intenship</h2>
+      <a href="image\Janani_Internship.pdf" target="_blank" class="certificate-link">Web Development</a>
+      <a href="image\college intern.pdf" target="_blank" class="certificate-link">Software Working Analysis</a>
+    </div>
+
+    <div class="certificate-item">
+      <h2>College Achievements</h2>
+      <a href="image\Paper Presentation.pdf"target="_blank" class="certificate-link">National Conference Paper Presentation</a>
+      <a href="image\Top Idea.pdf" target="_blank" class="certificate-link">Top Idea of month April - June in CIIED</a>
+    </div>
+
+    <div class="certificate-item">
+      <h2>Simplilearn Skillup</h2>
+      <a href="image/23bcs034 - Tableau.pdf" target="_blank" class="certificate-link">Tableau </a>
+    </div>
+
+    <div class="certificate-item">
+      <h2>Microsoft</h2>
+      <a href="https://learn.microsoft.com/en-us/users/jananishreepriyam-8494/" target="_blank" class="certificate-link">Microsoft Credentials</a>
+    </div>
+
+    <div class="certificate-item">
+      <h2>UiPath RPA Wallet</h2>
+      <a href="https://credentials.uipath.com/profile/jananishreepriyam864570/wallet" target="_blank" class="certificate-link">
+        <ul>
+          <li>Getting Started with RPA</li>
+          <li>Automation Business Analyst Associate</li>
+          <li>Citizen Developer Foundation</li>
+          <li>Process Mining Developer</li>
+          <li>Automation Explorer</li>
+          <li>Automation Developer SAP Specialist</li>
+        </ul>
+      </a>
+    </div>
+  </div>
+
+  <!-- Robot mascot and greeting bubble -->
+  <div class="robot-container">
+    <div class="robot-bubble" id="robot-bubble">
+      👋 Hello, welcome!
+    </div>
+    <div class="robot" title="I am Robo!">
+      <svg viewBox="0 0 64 64" width="100%" height="100%">
+        <rect x="14" y="22" width="36" height="26" rx="9" fill="#70faff" stroke="#00d4ff" stroke-width="2"/>
+        <ellipse cx="24" cy="34" rx="4" ry="4.5" fill="#0d0d0d"/>
+        <ellipse cx="40" cy="34" rx="4" ry="4.5" fill="#0d0d0d"/>
+        <rect x="26" y="46" width="12" height="4" rx="2" fill="#70faff"/>
+        <rect x="31" y="54" width="2" height="7" fill="#70faff"/>
+        <rect x="14" y="16" width="36" height="8" rx="3.5" fill="#0d0d0d"/>
+        <circle cx="17" cy="20" r="2" fill="#fff" stroke="#70faff" stroke-width="1"/>
+        <circle cx="47" cy="20" r="2" fill="#fff" stroke="#70faff" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Janani Shree Priya &nbsp;
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var bubble = document.getElementById('robot-bubble');
+      // Greet immediately with voice
+      bubble.classList.add('show');
+      if ('speechSynthesis' in window) {
+        var utter = new SpeechSynthesisUtterance("Hello, welcome!");
+        utter.rate = 1.08;
+        utter.pitch = 1.17;
+        utter.volume = 0.7;
+        var voices = window.speechSynthesis.getVoices();
+        utter.voice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Female')) || voices[0];
+        window.speechSynthesis.speak(utter);
+      }
+      setTimeout(() => bubble.classList.remove('show'), 3500);
+
+      document.querySelector('.robot').addEventListener('click', () => {
+        bubble.classList.add('show');
+        if ('speechSynthesis' in window) {
+          var utter = new SpeechSynthesisUtterance("Hello, welcome!");
+          utter.rate = 1.08;
+          utter.pitch = 1.17;
+          utter.volume = 0.7;
+          utter.voice = window.speechSynthesis.getVoices().find(v => v.lang.startsWith('en') && v.name.includes('Female')) || window.speechSynthesis.getVoices()[0];
+          window.speechSynthesis.speak(utter);
+        }
+        setTimeout(() => bubble.classList.remove('show'), 2500);
+      });
+    });
+  </script>
+</body>
+</html>
